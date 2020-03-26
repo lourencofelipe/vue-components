@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <h2>Clicked {{ counter }} times</h2>
+    <div :class="$style.counter">
+        <h3>Clicked {{ counter }} times</h3>
         <button @click="increment">Increment</button>
     </div>
 </template>
@@ -15,6 +15,15 @@
             increment(){
                 this.counter++
             }
+        },
+        created(){
+            console.log('CSS modules', this.$style)
         }
     }
 </script>
+
+<style module>
+    .counter {
+        border: 1px solid red;
+    }
+</style>

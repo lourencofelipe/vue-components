@@ -1,13 +1,18 @@
 <template>
-    <counter-app></counter-app>
+   <div>
+       <CounterInfo />
+       <CounterApp />
+    </div>
 </template>
 
 <script>
-import CounterApp from './components/CounterApp.vue'
+import CounterApp from './components/Counter/CounterApp.vue'
+import CounterInfo from './components/Counter/CounterInfo.vue'
 
 export default {
     components: {
-        'counter-app':CounterApp
+        CounterApp,
+        CounterInfo
     }    
 }
 </script>
