@@ -1,8 +1,7 @@
 import Vue from 'vue'
-import App from './App.vue'
-
-Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  //The element with id='app' is in index.html
+  el: '#app',
+  template: '<h1>Vue Component</h1>'
+})
