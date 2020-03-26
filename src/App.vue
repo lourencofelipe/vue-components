@@ -3,11 +3,11 @@
 </template>
 
 <script>
-import CounterApp from './CounterApp.vue'
+import CounterApp from './components/CounterApp.vue'
 
 export default {
     components: {
-        'counter-app': CounterApp
+        'counter-app':CounterApp
     }    
 }
 </script>
